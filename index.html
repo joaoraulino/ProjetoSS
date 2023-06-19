@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="img/Logo CJR-1.png" alt="logo_cjr">
+            </div>
+        </div>
+
+        <button class="entrar-btn">Entrar</button>
+
+    </header>
+    <form action="">
+        
+        <div class="user_photo">
+            <a href="">
+                <img src="img/user.png" alt="user_photo" >
+                <img src="img/camera.png" alt="user_camera" class="camera">
+            </a>
+        </div>
+        
+        <input id="name" type="text" name="name" placeholder="Nome" required>
+        
+        <select name="genero" id="genero"  required>
+            <option value="" disabled selected hidden> Gênero</option>
+            <option value="h_cis">Homem cis</option>
+            <option value="h_trans">Homem trans</option>
+            <option value="m_cis">Mulher cis</option>
+            <option value="m_trans">Mulher trans</option>
+            <option value="n_bin">Não Binário</option>
+            <option value="outro">Outro</option>
+        </select>
+        <input id="cargo" type="text" name="cargo" placeholder="Cargo" required>
+        <input id="email" type="text" name="email" placeholder="Email" required>
+        <input id="password" type="password" name="password" placeholder="Senha" minlength="8" required>
+        <p class="entrar">Possui conta? <a class="entrar" href="">Acesse aqui</a></p>
+        <button class="cadastrar-btn">Cadastrar</button> 
+
+    </form>
+        
+    <img src="img/Logo CJR-1.png" alt="logo_cjr" class="logo_fundo">
+
+
+</body>
+</html>

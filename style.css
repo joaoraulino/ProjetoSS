@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111E3E;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8BC34A;
+    box-shadow: 0 0 0.2rem black;
+}
+.logo-container {
+    width: 75px; 
+    height: 35px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.logo img{
+    
+    height: 30px;
+    top: ;
+}
+
+.entrar-btn {
+    padding: 10px 20px;
+    background: #222E50;
+    border: 0;
+    border-radius: 16px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+form{
+    position: absolute;
+    width: 480px;
+    height: 600px;
+    left: 900px;
+    top: 100px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222E50;
+}
+
+input {
+    width: 320px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+    padding: 1rem 1rem;
+    
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 350px;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    border: none;
+    background: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.logo_fundo {
+    width: 700px;
+    padding: 90px 50px;
+}
+
+.entrar {
+    margin-bottom: 10px;
+    color: white;;
+}
+
+.cadastrar-btn{
+    padding: 10px 20px;
+    background: white;
+    border: 0;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #222E50;
+    cursor: pointer;
+}
+.user_photo {
+    padding: 10px;
+}
+.camera {
+    position: absolute;
+    top: 25%;
+    left: 61%;
+}
