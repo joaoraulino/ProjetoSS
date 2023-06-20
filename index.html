@@ -28,8 +28,8 @@
         
         <input id="name" type="text" name="name" placeholder="Nome" required>
         
-        <select name="genero" id="genero"  required>
-            <option value="" disabled selected hidden> Gênero</option>
+        <select required>
+            <option value="" class="option-genero" disabled selected hidden> Gênero</option>
             <option value="h_cis">Homem cis</option>
             <option value="h_trans">Homem trans</option>
             <option value="m_cis">Mulher cis</option>
@@ -37,6 +37,7 @@
             <option value="n_bin">Não Binário</option>
             <option value="outro">Outro</option>
         </select>
+
         <input id="cargo" type="text" name="cargo" placeholder="Cargo" required>
         <input id="email" type="text" name="email" placeholder="Email" required>
         <input id="password" type="password" name="password" placeholder="Senha" minlength="8" required>

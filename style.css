@@ -65,7 +65,7 @@ input {
     font-weight: 700;
     margin-bottom: 10px;
 }
-
+/*
 select {
     width: 350px;
     padding: 1rem 1rem;
@@ -74,6 +74,29 @@ select {
     background: white;
     font-weight: 700;
     margin-bottom: 10px;
+    
+}
+*/
+select {
+    width: 350px;
+    padding: 1rem 1rem;
+    border-radius: 14px;
+    border: 0;
+    background: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    appearance: none;   /*Remove o estilo padrão dos navegadores*/ 
+    -webkit-appearance: none; /*Remove o estilo padrão dos navegadores*/
+    -moz-appearance: none; /*Remove o estilo padrão dos navegadores*/
+}
+
+select::-ms-expand {
+    display: none; /*Remove seta padrão do FireFox*/
+}
+
+select option {
+    font-weight: 700;
+
 }
 
 .logo_fundo {
