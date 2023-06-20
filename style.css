@@ -17,8 +17,8 @@ header{
     box-shadow: 0 0 0.2rem black;
 }
 .logo-container {
-    width: 75px; 
-    height: 35px;
+    width: 70px; 
+    height: 40px;
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -26,9 +26,7 @@ header{
     background: white;
 }
 .logo img{
-    
-    height: 30px;
-    top: ;
+    height: 25px;
 }
 
 .entrar-btn {
@@ -65,18 +63,17 @@ input {
     font-weight: 700;
     margin-bottom: 10px;
 }
-/*
-select {
-    width: 350px;
-    padding: 1rem 1rem;
-    border-radius: 15px;
-    border: none;
-    background: white;
-    font-weight: 700;
-    margin-bottom: 10px;
-    
+
+.user_photo {
+    padding: 10px;
 }
-*/
+.camera {
+    position: absolute;
+    top: 25%;
+    left: 61%;
+}
+
+
 select {
     width: 350px;
     padding: 1rem 1rem;
@@ -96,7 +93,6 @@ select::-ms-expand {
 
 select option {
     font-weight: 700;
-
 }
 
 .logo_fundo {
@@ -110,19 +106,13 @@ select option {
 }
 
 .cadastrar-btn{
+    width: 180px;
     padding: 10px 20px;
     background: white;
     border: 0;
     border-radius: 16px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 600;
     color: #222E50;
     cursor: pointer;
-}
-.user_photo {
-    padding: 10px;
-}
-.camera {
-    position: absolute;
-    top: 25%;
-    left: 61%;
 }
