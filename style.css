@@ -24,9 +24,11 @@ header{
     justify-content: center;
     align-items: center;
     background: white;
+    cursor: pointer;
 }
 .logo img{
     height: 25px;
+    cursor: pointer;
 }
 
 .entrar-btn {
@@ -36,7 +38,6 @@ header{
     border-radius: 16px;
     font-size: 16px;
     color: white;
-    cursor: pointer;
 }
 
 form{
@@ -59,20 +60,9 @@ input {
     background: white;
     border-radius: 15px;
     padding: 1rem 1rem;
-    
     font-weight: 700;
     margin-bottom: 10px;
 }
-
-.user_photo {
-    padding: 10px;
-}
-.camera {
-    position: absolute;
-    top: 25%;
-    left: 61%;
-}
-
 
 select {
     width: 350px;
@@ -114,5 +104,17 @@ select option {
     font-size: 20px;
     font-weight: 600;
     color: #222E50;
+    cursor: pointer;
+}
+#image {
+    border-radius: 50%;
+    max-width: 169px;
+}
+
+#inImg {
+    display: none;
+}
+
+.cam-container {
     cursor: pointer;
 }

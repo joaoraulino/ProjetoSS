@@ -18,15 +18,17 @@
         <button class="entrar-btn">Entrar</button>
 
     </header>
-    <form action="">
-
-        <div class="user_photo">
-            <a href="">
-                <img src="img/user.png" alt="user_photo" >
-                <img src="img/camera.png" alt="user_camera" class="camera">
-            </a>
+    <form>
+        
+        <div id="user-container">
+            <img src="img/user.png" id="image">
         </div>
 
+        <label for="inImg" class="cam-container">
+            <input type="file" id="inImg" accept=".jpeg, .png">
+            <img src="img/camera.png" alt="Adicione sua foto de perfil">
+        </label>
+        
         <input id="name" type="text" name="name" placeholder="Nome" required>
 
         <select required>
