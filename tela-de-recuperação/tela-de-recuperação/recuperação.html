@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJR: recuperação de senha</title>
+    <link rel="stylesheet" href="recuperação.css">
+    <link rel="icon" href="Logo-icon.png" type="image/x-icon"/>
+    <!--por icone bonitinho no nome da aba!-->
+
+</head>
+<body>
+    
+    <!--nav bar-->
+    <div class="navbar">
+        <a class="active" href="home" target="_blank" title="Home page"><img src="cjr.png"></a>
+        <a href="entrar" class="entrar">Entrar</a>
+        <a href="conta" class="conta">Criar conta</a>
+    </div>
+    <!--nav bar-->
+
+    <div class="conteudo">
+      <!--bloco da recuperação de senha-->
+      <img  src="cjrlogo.png" width = "778" height = "451">
+      <form action="action_page.php" method="post">
+       <div class="container">
+        
+     
+          <div class="formularios">
+           <h1>Bem vindo de volta,fulano! escolha sua nova senha</h1>
+           <label for="newpassword2"><b>Senha nova</b></label><br>
+           <input class="senha" type="password" placeholder="" name="newpassword2" required>
+          </div>
+          <br>
+          <div class="formularios">
+            <label for="newpassword2"><b>Digite novamente a senha</b></label><p>
+            <input class="senha" type="password" placeholder="" name="newpassword2" required>
+          </div>  
+         <p class="acesse_aqui">Possui conta? <a class="login" href="">Acesse aqui</a></p>
+         <button  type="cadastro">cadastrar</button>
+       </div>
+    
+      </form>
+      
+    </div>  
+    <!--bloco da recuperação de senha-->
+    
+</body>
+</html>
