@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de login</title>
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("password");
+            var passwordToggle = document.getElementById("password-toggle");
+            
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+     <link rel="stylesheet" 
+     href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="Logo CJR-1 (1).png" alt="logo_cjr">
+            </div>
+        </div>
+        <button class = 'criar_conta-btn'>Criar conta</button>
+        <button class="entrar-btn">Entrar</button>
+
+    </header>
+    <form action="">
+
+        <div class="user_photo">
+            <a href="">
+                <img  class = 'logo_user' src="img/Vector (3).png" alt="usuario">
+            </a>
+        </div>
+        <label for="login" class="icon_user"><i class="fa fa-user"></i></label>
+        <input id="login"  type="text" name="login" placeholder="Login" required>
+        
+        <div class= 'div_login'>
+            <label for="senha" class = 'icon_lock'><i class = 'fa fa-lock'></i></label>
+        <input id="password" type="password" name="password" placeholder="Senha" minlength="8" required>
+        <button  id="password-toggle" class = 'botao_mostrar' onclick="togglePasswordVisibility()"><img class='olho' src="Vector (5).png" alt=""></button>
+        </div>
+        <a class="esqueceu" href="">Esqueceu a senha?</a>
+        <button class="logar">Entrar</button> 
+
+
+    </form>
+    <script src="script.js"></script> 
+</body>
+</html>
