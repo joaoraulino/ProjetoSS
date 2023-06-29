@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="m.css">
+    <style>
+        body{
+            background-color: rgba(90, 140, 173, 0.582);
+        }
+    </style>
+</head>
+<body>
+    <h1>Botão de teste!</h1>
+    <button class="teste">comentarios</button>
+    <div class="wraper" id="slider">
+        <dialog>
+            <div class="text-bar">
+                <a class="B" href="B" target="_blank" title="Black"><img src="/img/Vector.png"></a>
+                <a class="I" href="I" target="_blank" title="Italico"><img src="/img/italic.png"></a>
+                <a class="H" href="H" target="_blank" title="H"><img src="/img/Vector (1).png"></a>
+                <a class="link" href="link" target="_blank" title="link"><img src="/img/link.png"></a>
+                <a class="imagem" href="image" target="_blank" title="image"><img src="/img/Vector (2).png"></a>
+                <a class="question" href="question" target="_blank" title="question"><img src="/img/question-circle.png"></a>
+            </div>
+
+
+        
+            <div class="formularios">
+                <form class="comentarios" id="comentarios" name="comentarios"><br></br>
+            </div>
+            <div class="container">
+                <button class="cancelar">Cancelar</button>
+                <button class="publicar">Publicar</button>
+            </div>    
+        </dialog>    
+    </div>
+
+
+
+<!--descobrir como por um arquivo js linkado-->
+<script>
+const button = document.querySelector("button")
+const modal = document.querySelector("dialog")
+const buttonClose = document.querySelector("dialog button")
+
+
+button.onclick = function() {
+    modal.showModal()
+}
+
+buttonClose.onclick = function(){
+    modal.close()
+
+}
+
+
+
+</script>
+
+</body>
+</html>
