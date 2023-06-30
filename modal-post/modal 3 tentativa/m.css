@@ -1,15 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
 
+
+
+
 .text-bar{
     position: absolute;
     top: 18%;
-    left: 20%;
+    left: 12%;
     display: inline;
-    align-items: center;
-    border-bottom: #8BC34A;
-    border: 10px;
+    align-items: left;
+    width: 42%;
+    padding-bottom: 1.6%;
+    padding-right: 32%;
 
 }
+
+.text-bar img {
+    opacity: 0.3;
+}
+
+.text-bar img:hover {
+    opacity: 1;
+
+}
+
+
+.B{
+    padding: 5%;
+}
+
+.b a:hover{
+    color: #8BC34A;
+}
+
+.I{
+    padding: 5%;
+}
+
+.H{
+    padding: 5%;
+}
+
+.link{
+    padding: 5%;
+}
+
+.imagem{
+    padding: 5%;
+}
+
+.question{
+    padding: 5%;
+}
+
+
 
 .teste{
     left: 50px;
@@ -41,8 +85,7 @@ dialog{
     width: 961px;
     height: 705px;
     color: #111E3E;
-    background-color: #111E3E
-    ;
+    background-color: #111E3E;
 }
 
 form{
@@ -54,6 +97,35 @@ form{
     background-color: #ddd;
     color: rgb(42, 158, 77);
 }
+
+
+.testo{
+    border: #8BC34A;
+    border-width: 10px;
+}
+
+textarea{
+    font-size: 28px;
+    text-align: left;
+    display: flexbox;
+    position: absolute;
+    color:#8BC34A;
+    align-items: center;
+    top: -450px;
+    left: -355px;
+    width: 700px;
+    height: 320px;
+    border-radius: 16px;
+    background-color:#222E50;
+    resize: none;
+    padding: 10px;
+
+}
+
+textarea:focus {
+    outline: none !important;
+    border:1px solid #8BC34A;
+  }
 
 .container{
     position: absolute;
@@ -84,8 +156,6 @@ form{
 }
 
 
-
-
 .formularios{
     margin: 9%;
     color: rgb(8, 17, 143);
@@ -101,3 +171,4 @@ form{
 .comentarios{
     color: #111E3E;
 }
+

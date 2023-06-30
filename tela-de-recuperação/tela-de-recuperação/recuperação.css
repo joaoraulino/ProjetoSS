@@ -2,6 +2,7 @@
 *{
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 body{
@@ -94,7 +95,7 @@ label{
   color: white;
   align-items: center;
   margin-left: 10%;
-  
+  border: none;
 }
 
 .acesse_aqui{
@@ -160,5 +161,6 @@ form{
   align-items: left;
   align-items: self-start;
   background-color: #222E50;
+  border: none;
 
 }
