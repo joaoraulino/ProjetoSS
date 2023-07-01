@@ -19,11 +19,13 @@ body {
     background-color: #8BC34A;
     box-shadow: 0 0 0.2rem black;
     max-height: 40px;
+    align-items: center;
 }
 
 .logo-container {
     height: auto;
     width: 100px;
+    height: 40px;
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -55,6 +57,7 @@ body {
     background-color: transparent;
     border: none;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 a {
@@ -145,12 +148,23 @@ p {
     cursor: pointer;
     font-weight: 800;
     box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.btn-edit-profile:hover {
+    background-color: #1e2a49;
 }
 
 .post-container {
     border-radius: 16px;
     background-color: #1e2a49;
     margin: 10px;
+    margin-inline: 20px;
+    cursor: pointer;
+}
+
+.post-container:hover {
+    background-color: #222f4e;
 }
 
 .post-info {
@@ -168,7 +182,41 @@ p {
 
 .post-text p{
     font-weight: lighter;
-    padding: 0 50px 50px 80px;
+    padding: 0 50px 20px 80px;
     text-align: justify;
     hyphens: auto;
 }
+
+.btn-comment {
+    margin-bottom: 20px;
+    left: 80px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.btn-comment:hover .circle {
+    opacity: 0.5;
+    background-color: #65e8ff;
+}
+
+#comment {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
