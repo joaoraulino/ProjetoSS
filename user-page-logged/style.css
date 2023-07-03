@@ -161,6 +161,7 @@ p {
     margin: 10px;
     margin-inline: 20px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .post-container:hover {
@@ -206,7 +207,7 @@ p {
     border-radius: 50%;
     background-color: transparent;
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .btn-comment:hover .circle {
