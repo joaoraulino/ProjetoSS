@@ -1,0 +1,12 @@
+{
+  "name": "feed_postaberto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "comandos_feed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "Daniel Campos Silva",
+  "license": "ISC"
+}
