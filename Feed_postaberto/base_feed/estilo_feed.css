@@ -1,0 +1,164 @@
+* {
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #111E3E;
+    position: relative;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8BC34A;
+    box-shadow: 0 0 0.2rem black;
+}
+.logo-container {
+    padding: 7px 30px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    cursor: pointer;
+}
+.logo img{
+    height: 25px;
+    cursor: pointer;
+}
+
+.entrar-btn {
+    padding: 10px 20px;
+    background: #222E50;
+    border: 0;
+    border-radius: 16px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.feed{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100%;
+    border: #1e2a49 solid 1px;
+    margin-top: 10px;
+    border-radius: 16px;
+}
+p {
+    font-family: "Inter", sans-serif;
+    color: rgb(231, 231, 231);
+}
+
+.user-info {
+    position: relative;
+}
+.post-container {
+    border-radius: 16px;
+    background-color: #1e2a49;
+    margin: 10px;
+    margin-inline: 20px;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+.post-container_main{
+    border-radius: 30px;
+    background-color: #121a2e;
+    margin: 10px;
+    margin-inline: 20px;
+    cursor: pointer;
+    transition: 0.6s ease;
+    
+}
+.post-container:hover {
+    background-color: #303e61;
+}
+.post-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin: 15px;
+}
+.post-info_main{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin: 15px;
+    font-size: 20px;
+
+}
+.time {
+    color: rgb(139, 139, 139);
+    font-weight: normal;
+}
+.post-text p{
+    font-weight: lighter;
+    padding: 0 50px 20px 80px;
+    text-align: justify;
+    hyphens: auto;
+}
+.post-text_main p{
+    font-weight: lighter;
+    padding: 0 50px 20px 80px;
+    text-align: justify;
+    hyphens: auto;
+    font-size: 20px;
+    
+
+}
+.btn-comment {
+    margin-bottom: 20px;
+    left: 80px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+.circle {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.btn-comment:hover .circle {
+    opacity: 0.2;
+    background-color: #495d91;
+}
+#comment {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#profile-pic {
+    position: relative;
+    top: -3px;
+    left: -2px;
+    width: 50px;
+    height: 50px;
+}
+h4{
+    color: azure;
+    padding: 25px 25px 10px;
+    font-size: larger;
+    font-weight: lighter;
+}
+#profile-pic_main {
+    position: relative;
+    top: -3px;
+    left: -2px;
+    width: 70px;
+    height: 70px;
+}
