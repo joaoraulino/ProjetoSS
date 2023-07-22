@@ -8,11 +8,11 @@ datasource db {
 }
 
 model coments{
-  comment_id Int @id @default(autoincrement())
-  post_id Int @unique
-  user_id String @unique 
-  comment_content String
-
+  comment_id      Int      @id @default(autoincrement())
+  post_id         Int      @unique
+  user_id         String   
+  content_comments String
+  created_at      DateTime @default(now())
 
 
 }
