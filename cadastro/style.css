@@ -51,9 +51,8 @@ main {
 form{
     position: relative;
     width: 480px;
-    height: 600px;
+    height: 650px;
     left:60%;
-    top: 0px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
