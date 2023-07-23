@@ -12,7 +12,7 @@
     <header>
     <div class="logo-container">
         <div class="logo">
-            <img src="C:\Users\danie_azyehd6\OneDrive\Documentos\Projeto Grupo 11\Feed_postaberto\img\logo_cjr.png" alt="logo_cjr">
+            <img src="/img/logo_cjr.png" alt="logo_cjr">
         </div>
     </div>
     
@@ -25,7 +25,7 @@
         
         <div class="post-container_main">
             <div class="post-info_main">
-                <img src="../img/profile-picture.png" alt="" id="profile-pic_main">
+                <img src="/img/profile-picture.png" alt="" id="profile-pic_main">
                 <p class="user-name">Joao Vitor</p>
                 <p class="time">
                     • <time datetime="2023-03-17">17 de mar</time>
@@ -38,9 +38,9 @@
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio quae et, temporibus vitae ex a voluptates, iusto quos voluptatem corporis eveniet alias voluptate obcaecati commodi est dolores tempore. Atque, quaerat!
 
                 </p>
-                <button class="btn-comment" >
+                <button id="comentario" class="btn-comment" >
                     <span class="circle"></span>
-                    <img src="C:\Users\danie_azyehd6\OneDrive\Documentos\Projeto Grupo 11\Feed_postaberto\img\comment (1).png" alt="" id="comment">
+                    <img src="/img/comment.png" alt="comentario" id="comment">
                 </button>
                 
             
@@ -54,11 +54,61 @@
         <h4>Comentários:</h4>
         <div id='posts-container' class="post-container"></div>
 
+
+        <div class="modal-1">
+            <dialog class="modal">
+                <!--
+                <div class="text-bar">
+                    <a class="B" href="B" target="_blank" title="Black"><img src="/img/Vector.png"></a>
+                    <a class="I" href="I" target="_blank" title="Italico"><img src="/img/italic.png"></a>
+                    <a class="H" href="H" target="_blank" title="H"><img src="/img/Vector (1).png"></a>
+                    <a class="link" href="link" target="_blank" title="link"><img src="/img/link.png"></a>
+                    <a class="imagem" href="image" target="_blank" title="image"><img src="/img/Vector (2).png"></a>
+                    <a class="question" href="question" target="_blank" title="question"><img src="/img/question-circle.png"></a>
+                </div>
+            -->
+    
+            
+                <div class="formularios">
+                    <form class="comentarios" id="comentarios" name="comentarios"><br></br>
+                </div>
+                <div class="container">
+                    <div class="testo">
+                        <textarea  id="input"  rows="5" cols="5" name="comment"  maxlength="280"></textarea>
+                    </div>
+                    <button class="cancelar">Cancelar</button>
+                    <button class="publicar">Publicar</button>
+                </div>    
+            </dialog>
+        </div>    
        
     </div>
+
+
 </main>
 
-
+<script>
+    
+    const button = document.getElementById("comentario")
+    const modal = document.querySelector("dialog")
+    const buttonClose = document.querySelector("dialog button")
+    
+    
+    
+    button.onclick = function() {
+        modal.showModal()
+    }
+    
+    buttonClose.onclick = function(){
+        modal.close()
+    
+    }
+    
+    
+    
+    
+    
+    </script>
 
 </body>
 </html>
