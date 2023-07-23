@@ -1,0 +1,18 @@
+{
+  "name": "feed_postaberto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "comandos_feed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node comandos_feed.js"
+  },
+  "type": "module",
+  "author": "Daniel Campos Silva",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.16.2",
+    "express": "^4.18.2",
+    "prisma": "^4.16.2"
+  }
+}
