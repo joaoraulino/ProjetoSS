@@ -11,15 +11,13 @@
     <header>
         <div class="logo-container">
             <div class="logo">
-                <img src="/img/logo_cjr.png" alt="logo_cjr">
+                <img src="../img/logo_cjr.png" alt="logo_cjr">
             </div>
         </div>
         
-        <button class="entrar-btn">Entrar</button>
-
-    </header>
-    <form>
+        <button class= "entrar-btn" onclick="window.location.href='../login/pagdelogin2.html'">Entrar</button>
         
+
         <div id="user-container">
             <img src="/img/logo_user.png" id="image">
         </div>
@@ -28,29 +26,43 @@
             <input type="file" id="inImg" accept=".jpeg, .png">
             <img src="/img/logo_camera.png" alt="Adicione sua foto de perfil">
         </label>
+
+    </header>
+    <main>
+        <form>
         
-        <input id="name" type="text" name="name" placeholder="Nome" required>
+            <div id="user-container">
+                <img src="../img/logo_user.png" id="image">
+            </div>
+    
+            <label for="inImg" class="cam-container">
+                <input type="file" id="inImg" accept=".jpeg, .png">
+                <img src="../img/logo_camera.png" alt="Adicione sua foto de perfil">
+            </label>
+            
+            <input id="name" type="text" name="name" placeholder="Nome" required>
+            <input id="user-name" type="text" name="user-name" placeholder="Nome de usuário" required>
 
-        <select required>
-            <option value="" class="option-genero" disabled selected hidden> Gênero</option>
-            <option value="h_cis">Homem cis</option>
-            <option value="h_trans">Homem trans</option>
-            <option value="m_cis">Mulher cis</option>
-            <option value="m_trans">Mulher trans</option>
-            <option value="n_bin">Não Binário</option>
-            <option value="outro">Outro</option>
-        </select>
-
-        <input id="cargo" type="text" name="cargo" placeholder="Cargo" required>
-        <input id="email" type="text" name="email" placeholder="Email" required>
-        <input id="password" type="password" name="password" placeholder="Senha" minlength="8" required>
-        <p class="entrar">Possui conta? <a class="entrar" href="">Acesse aqui</a></p>
-        <button class="cadastrar-btn">Cadastrar</button> 
-
-
-    </form>
-        
+            <select required>
+                <option value="" class="option-genero" disabled selected hidden> Gênero</option>
+                <option value="h_cis">Homem cis</option>
+                <option value="h_trans">Homem trans</option>
+                <option value="m_cis">Mulher cis</option>
+                <option value="m_trans">Mulher trans</option>
+                <option value="n_bin">Não Binário</option>
+                <option value="outro">Outro</option>
+            </select>
+    
+            <input id="cargo" type="text" name="cargo" placeholder="Cargo" required>
+            <input id="email" type="text" name="email" placeholder="Email" required>
+            <input id="password" type="password" name="password" placeholder="Senha" minlength="8" required>
+            <p class="entrar">Possui conta? <a class="entrar" href="/login/pagdelogin2.html">Acesse aqui</a></p>
+            <button class="cadastrar-btn">Cadastrar</button> 
+    
+    
+        </form>
     <img src="/img/logo_cjr.png" alt="logo_cjr" class="logo_fundo">
+    </main>
 
     <script src="script.js"></script>
 </body>
