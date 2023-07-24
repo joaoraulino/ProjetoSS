@@ -48,41 +48,71 @@ async function getAllComments() {
 getAllComments();
 
 const commentForm = document.getElementById("comment-form");
+const closeButton = document.querySelector(".cancelar");
+const commentButton = document.querySelector(".btn-comment");
+
+commentForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(commentForm);
+    const url_comentar = "URL_DA_SUA_ROTA_COMENTAR";
+
+    try {
+        const response = await fetch(url_comentar, {
+            method: "POST",
+            body: formData
+        });
+
+        if (response.ok) {
+            const novoComentario = await response.json();
+            console.log("Novo comentário adicionado:", novoComentario);
+            // Do whatever is necessary after adding the comment successfully
+        } else {
+            const erro = await response.json();
+            showErrorMessage(erro.erro);
+            closeModalPost(); // Close the modal post in case of an error
+        }
+    } catch (error) {
+        showErrorMessage("Parece que você não está logado! Cadastre-se ou entre com sua conta para comentar");
+        closeModalPost(); // Close the modal post in case of an error
+    }
+});
+
+function showErrorMessage(message) {
     const errorMessage = document.getElementById("error-message");
     const overlay = document.getElementById("overlay");
-    const closeButton = document.getElementById("close-button");
+    errorMessage.textContent = message;
 
-    commentForm.addEventListener("submit", async (event) => {
-        event.preventDefault(); // Impede o envio padrão do formulário
+    // Create the links and append them to the errorMessage div
+    const link1 = document.createElement("a");
+    link1.href = "file:///C:/Users/danie_azyehd6/OneDrive/Documentos/Projeto%20Grupo%2011/cadastro/index.html"; // Replace with the URL for registration
+    link1.textContent = "Cadastre-se";
 
-        const formData = new FormData(commentForm);
-        const url_comentar = "URL_DA_SUA_ROTA_COMENTAR";
+    const link2 = document.createElement("a");
+    link2.href = "file:///C:/Users/danie_azyehd6/OneDrive/Documentos/Projeto%20Grupo%2011/login/pagdelogin2.html"; // Replace with the URL for login
+    link2.textContent = "Entre com sua conta";
 
-        try {
-            const response = await fetch(url_comentar, {
-                method: "POST",
-                body: formData
-            });
+    // Add the links to the errorMessage div
+    errorMessage.appendChild(document.createElement("br")); // Add a line break
+    errorMessage.appendChild(link1);
+    errorMessage.appendChild(document.createTextNode(" ou "));
+    errorMessage.appendChild(link2);
 
-            if (response.ok) {
-                const novoComentario = await response.json();
-                console.log("Novo comentário adicionado:", novoComentario);
-                // Faça o que for necessário após adicionar o comentário
-            } else {
-                const erro = await response.json();
-                showErrorMessage(erro.erro); // Exibe a mensagem de erro na tela
-            }
-        } catch (error) {
-            showErrorMessage("Parece que você não está logado! Cadastre-se ou entre com sua conta para comentar");
-        }
-    });
+    overlay.style.display = "flex"; // Displays the overlay element
+}
 
-    function showErrorMessage(message) {
-        errorMessage.textContent = message;
-        overlay.style.display = "flex"; // Exibe o elemento de sobreposição
-    }
+function closeModalPost() {
+    const modal = document.querySelector(".modal");
+    const overlay = document.getElementById("overlay");
+    modal.close();
+}
 
-    closeButton.addEventListener("click", () => {
-        overlay.style.display = "none"; // Oculta o elemento de sobreposição
-        location.reload(); // Recarrega a página ao clicar no botão de fechar
-    });
+closeButton.addEventListener("click", () => {
+    const overlay = document.getElementById("overlay");
+    overlay.style.display = "none"; // Hides the overlay element
+});
+
+commentButton.addEventListener("click", () => {
+    const modal = document.querySelector(".modal");
+    modal.showModal();
+});
