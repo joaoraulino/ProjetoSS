@@ -85,11 +85,11 @@ function showErrorMessage(message) {
 
     // Create the links and append them to the errorMessage div
     const link1 = document.createElement("a");
-    link1.href = "file:///C:/Users/danie_azyehd6/OneDrive/Documentos/Projeto%20Grupo%2011/cadastro/index.html"; // Replace with the URL for registration
+    link1.href = "/cadastro/index.html"; // Replace with the URL for registration
     link1.textContent = "Cadastre-se";
 
     const link2 = document.createElement("a");
-    link2.href = "file:///C:/Users/danie_azyehd6/OneDrive/Documentos/Projeto%20Grupo%2011/login/pagdelogin2.html"; // Replace with the URL for login
+    link2.href = "/login/pagdelogin2.html"; // Replace with the URL for login
     link2.textContent = "Entre com sua conta";
 
     // Add the links to the errorMessage div
