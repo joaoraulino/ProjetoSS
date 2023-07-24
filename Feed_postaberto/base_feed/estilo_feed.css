@@ -217,35 +217,13 @@ p{
 }
 
 
-.B{
+.B, .b, .I, .H, .link, .imagem, .question{
     padding: 5%;
 }
 
 .b a:hover{
     color: #8BC34A;
 }
-
-.I{
-    padding: 5%;
-}
-
-.H{
-    padding: 5%;
-}
-
-.link{
-    padding: 5%;
-}
-
-.imagem{
-    padding: 5%;
-}
-
-.question{
-    padding: 5%;
-}
-
-
 
 .teste{
     left: 50px;
