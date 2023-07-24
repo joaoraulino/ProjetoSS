@@ -17,8 +17,15 @@ header{
     background-color: #8BC34A;
     box-shadow: 0 0 0.2rem black;
 }
+
+main {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+
 .logo-container {
-    padding: 5px 15px;
+    width: 100px;
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -44,9 +51,8 @@ header{
 form{
     position: relative;
     width: 480px;
-    height: 600px;
-    left:900px;
-    top: 30px;
+    height: 650px;
+    left:60%;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -91,7 +97,7 @@ select option {
 .logo_fundo {
     width: 700px;
     left: 100px;
-    top: 200px;
+    margin-top: auto;
     position: absolute;
 }
 
